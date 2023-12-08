@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!IsAlive)
         {
-            //load main menu
+            SceneManager.LoadScene("MainMenu");
         }
         if (!IsAlive) { return; }
         Run();
@@ -49,6 +50,10 @@ public class PlayerMovement : MonoBehaviour
 
         bool PlayerHZMoving = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         MyAnimator.SetBool("IsRunning", PlayerHZMoving);
+        if (PlayerHZMoving)
+        {
+            //play sfx on repeat
+        }
     }
     void FlipSprite()
     {
