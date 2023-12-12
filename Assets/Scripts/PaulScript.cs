@@ -12,7 +12,7 @@ public class PaulScript : MonoBehaviour
             canvas.gameObject.SetActive(true);
         }
     }
-    private void OnTriggerExit(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
