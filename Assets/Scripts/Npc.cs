@@ -12,14 +12,17 @@ public class Npc : MonoBehaviour
     public string[] dialogue;
     private int index;
     [SerializeField] public float wordSpeed = 1f;
+    [SerializeField] public GameObject ContButton;
+    [SerializeField] float timerDelay;
     public bool playerClose;
     bool keyPressed;
+    float timer = 0f;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerClose)
         {
-            if (dialoguePanel.activeInHierarchy)
+            if (dialoguePanel.activeInHierarchy && timer <= timerDelay)
             {
                 NoText();
             }else
@@ -27,13 +30,26 @@ public class Npc : MonoBehaviour
                 dialogueText.text = " ";
                 dialoguePanel.SetActive(true);
                 dialogueText.gameObject.SetActive(true);
-                StartCoroutine(Typing());
+                NextLine();
+                timer += Time.deltaTime;
+            }
+        }
+        if (dialogueText.text == dialogue[index])
+        {
+            if (dialoguePanel.activeInHierarchy)
+            {
+                NoText();
+                ContButton.SetActive(false);
+            }else
+            {
+                ContButton.SetActive(true);
             }
         }
     }
     public void NextLine()
     {
-        if (index > dialogue.Length -1f)
+        ContButton.SetActive(false);
+        if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = " ";
@@ -41,23 +57,27 @@ public class Npc : MonoBehaviour
         }
         else
         {
-            NoText();
+            index = 1;
+            dialogueText.text = " ";
+            StartCoroutine(Typing());
         }
     }
     IEnumerator Typing()
     {
+        ContButton.SetActive(false);
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
+        ContButton.SetActive(true);
     }
     public void NoText()
     {
         dialogueText.text = " ";
-        index = 0;
         dialoguePanel.SetActive(false);
         dialogueText.gameObject.SetActive(false);
+        ContButton.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

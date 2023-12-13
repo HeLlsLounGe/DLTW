@@ -239,6 +239,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &60451907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7186899874018821805, guid: 4ece00943859df14f9a804c44cf07f07, type: 3}
+  m_PrefabInstance: {fileID: 1806315434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &103600125
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +447,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a38054c843475e47b8c13b052eeb5af, type: 3}
+--- !u!1 &125588445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705340570894208924, guid: e076f3d2769b57d49b4ea2a32561fa92, type: 3}
+  m_PrefabInstance: {fileID: 1701697999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &152546122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8173226627078027663, guid: 9858daf5454789a459a043ed36bc3bab, type: 3}
@@ -515,6 +525,145 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &173150397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3027654859404270765, guid: 276cd0348ceef204a8570ba648dfdef8, type: 3}
+  m_PrefabInstance: {fileID: 1435016145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &174334659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 174334660}
+  - component: {fileID: 174334662}
+  - component: {fileID: 174334661}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &174334660
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174334659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 639568663}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &174334661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174334659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Continue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a2fd26934fdc58047835cb946c2288d3, type: 2}
+  m_sharedMaterial: {fileID: 4407774630813149711, guid: a2fd26934fdc58047835cb946c2288d3, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &174334662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174334659}
+  m_CullTransparentMesh: 1
 --- !u!1 &199976863
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +1071,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2475674193209073453, guid: e076f3d2769b57d49b4ea2a32561fa92, type: 3}
   m_PrefabInstance: {fileID: 1701697999}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &339345480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125588445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4ada7f263ff46baac34240adb254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 761233175}
+  dialogueText: {fileID: 364215286}
+  dialogue:
+  - What do you want
+  - Quit your loitering
+  - Man, i need a water can
+  - Go get me a water can young one
+  - That paul guy that has the shop is real strange
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
+  playerClose: 0
 --- !u!1 &340905164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1179,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &362397796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7692580466546649949, guid: 91b6f42567b58d247b5ee78015447b2f, type: 3}
+  m_PrefabInstance: {fileID: 662892450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &364215284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &364215285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1063,7 +1241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I should look around town.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2fd26934fdc58047835cb946c2288d3, type: 2}
   m_sharedMaterial: {fileID: 4407774630813149711, guid: a2fd26934fdc58047835cb946c2288d3, type: 2}
@@ -1644,6 +1822,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6186976860472383630, guid: 4ece00943859df14f9a804c44cf07f07, type: 3}
   m_PrefabInstance: {fileID: 1806315434}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &586939972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60451907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4ada7f263ff46baac34240adb254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 761233175}
+  dialogueText: {fileID: 364215286}
+  dialogue:
+  - My parents arent home
+  - Do you know where they went?
+  - We should play some games sometime!
+  - Psst, dont talk to my neighbor, hes weird
+  - Have you seen my mom? i dont know where she went
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
+  playerClose: 0
 --- !u!1 &592084879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2225,139 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7452f4957d6dbe645b01e02876c32f15, type: 3}
+--- !u!1 &639568662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639568663}
+  - component: {fileID: 639568666}
+  - component: {fileID: 639568665}
+  - component: {fileID: 639568664}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &639568663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639568662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 174334660}
+  m_Father: {fileID: 1742133798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 288.3, y: -192.7}
+  m_SizeDelta: {x: 102.93, y: 19.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &639568664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639568662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 639568665}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1695921775}
+        m_TargetAssemblyTypeName: Npc, Assembly-CSharp
+        m_MethodName: NextLine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &639568665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639568662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5fee92468a7031b49b3ffcc04b5f60c2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &639568666
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639568662}
+  m_CullTransparentMesh: 1
 --- !u!1001 &662892450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2082,7 +2417,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7692580466546649949, guid: 91b6f42567b58d247b5ee78015447b2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1066465826}
   m_SourcePrefab: {fileID: 100100000, guid: 91b6f42567b58d247b5ee78015447b2f, type: 3}
 --- !u!1001 &663218683
 PrefabInstance:
@@ -2990,7 +3328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &761233176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3132,7 +3470,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1559187431
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &784473098
@@ -3166,7 +3504,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 418932740831995192, guid: 0cd0475ed86316841ac360c7eed99ac5, type: 3}
       propertyPath: m_SortingOrder
-      value: -10
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 1842046326271891776, guid: 0cd0475ed86316841ac360c7eed99ac5, type: 3}
       propertyPath: m_Name
@@ -3310,6 +3648,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8382180636663331237, guid: 276cd0348ceef204a8570ba648dfdef8, type: 3}
   m_PrefabInstance: {fileID: 1435016145}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &837797715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173150397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4ada7f263ff46baac34240adb254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 761233175}
+  dialogueText: {fileID: 364215286}
+  dialogue:
+  - Hello son!
+  - There are some coins around here, better get em!
+  - Remember son, never leave the wall
+  - Stay away from that paul fella, hes creepy!
+  - You run off now kiddo
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
+  playerClose: 0
 --- !u!1 &842861312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,7 +4203,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2528474755044355699, guid: b2c1d670e37360b44b1db8a10dacd51a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1823260084}
   m_SourcePrefab: {fileID: 100100000, guid: b2c1d670e37360b44b1db8a10dacd51a, type: 3}
 --- !u!1 &903246178
 GameObject:
@@ -38339,6 +38704,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7717117783907698351, guid: 91b6f42567b58d247b5ee78015447b2f, type: 3}
   m_PrefabInstance: {fileID: 662892450}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1066465826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362397796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4ada7f263ff46baac34240adb254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 761233175}
+  dialogueText: {fileID: 364215286}
+  dialogue:
+  - Hello there young one,
+  - How are you this fine evening?
+  - Ive always wanted kids
+  - Your parents are lucky
+  - I wonder if the nice man in the orange house likes me
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
+  playerClose: 0
 --- !u!4 &1109137527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8489338897911253052, guid: 7452f4957d6dbe645b01e02876c32f15, type: 3}
@@ -40989,7 +41378,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3027654859404270765, guid: 276cd0348ceef204a8570ba648dfdef8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837797715}
   m_SourcePrefab: {fileID: 100100000, guid: 276cd0348ceef204a8570ba648dfdef8, type: 3}
 --- !u!1 &1459818563
 GameObject:
@@ -41419,7 +41811,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5879441516104301548, guid: 4cda719a3e94c80439ce366c6fe1f7c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721575930}
   m_SourcePrefab: {fileID: 100100000, guid: 4cda719a3e94c80439ce366c6fe1f7c5, type: 3}
 --- !u!1 &1638621052
 GameObject:
@@ -41614,9 +42009,15 @@ MonoBehaviour:
   dialoguePanel: {fileID: 761233175}
   dialogueText: {fileID: 364215286}
   dialogue:
-  - Hello I am your mother child
-  - Test #2
-  wordSpeed: 0.1
+  - Test #1
+  - Hello son! how are you today?
+  - What mischeif are you up to?
+  - Remember to do the dishes this afternoon
+  - You should ask the others if they need help
+  - Careful or bob the worm might get ya
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
   playerClose: 0
 --- !u!1001 &1699184957
 PrefabInstance:
@@ -41824,7 +42225,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1705340570894208924, guid: e076f3d2769b57d49b4ea2a32561fa92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 339345480}
   m_SourcePrefab: {fileID: 100100000, guid: e076f3d2769b57d49b4ea2a32561fa92, type: 3}
 --- !u!1 &1711149340
 GameObject:
@@ -41915,6 +42319,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2087704712567929571, guid: 4cda719a3e94c80439ce366c6fe1f7c5, type: 3}
   m_PrefabInstance: {fileID: 1610756548}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1721575926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5879441516104301548, guid: 4cda719a3e94c80439ce366c6fe1f7c5, type: 3}
+  m_PrefabInstance: {fileID: 1610756548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1721575930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721575926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4ada7f263ff46baac34240adb254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 761233175}
+  dialogueText: {fileID: 364215286}
+  dialogue:
+  - What up kid?
+  - Man im hungry, you got food?
+  - Hey, dont leave the wall, its dangerous
+  - Howdy do there kiddo
+  - Go get me some food or somethin
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
+  playerClose: 0
 --- !u!1 &1728762841
 GameObject:
   m_ObjectHideFlags: 0
@@ -43663,7 +44096,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1559187431
   m_SortingOrder: 999
   m_TargetDisplay: 0
 --- !u!224 &1742133798
@@ -43680,6 +44113,7 @@ RectTransform:
   m_Children:
   - {fileID: 761233176}
   - {fileID: 364215285}
+  - {fileID: 639568663}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -43891,7 +44325,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7186899874018821805, guid: 4ece00943859df14f9a804c44cf07f07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 586939972}
   m_SourcePrefab: {fileID: 100100000, guid: 4ece00943859df14f9a804c44cf07f07, type: 3}
 --- !u!1 &1815585769
 GameObject:
@@ -102670,6 +103107,35 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &1823260080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2528474755044355699, guid: b2c1d670e37360b44b1db8a10dacd51a, type: 3}
+  m_PrefabInstance: {fileID: 896626107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1823260084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823260080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a4ada7f263ff46baac34240adb254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 761233175}
+  dialogueText: {fileID: 364215286}
+  dialogue:
+  - Hello there child
+  - Hey, watch the grass, dont wreck my lawn
+  - Dont leave the wall kiddo, trust me
+  - Whatever you do, dont push on the walls
+  - Its a myth that you can walk through them
+  wordSpeed: 0.05
+  ContButton: {fileID: 639568662}
+  timerDelay: 0
+  playerClose: 0
 --- !u!1 &1838475925
 GameObject:
   m_ObjectHideFlags: 0
@@ -103262,7 +103728,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 939109712557851133, guid: 2727c8c05f7e11247872e1185c9f4405, type: 3}
       propertyPath: m_SortingOrder
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 1105872000300002821, guid: 2727c8c05f7e11247872e1185c9f4405, type: 3}
       propertyPath: m_LocalScale.x

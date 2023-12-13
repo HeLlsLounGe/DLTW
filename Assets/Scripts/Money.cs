@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Money : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI CashText;
+    [SerializeField] Canvas canvas;
+    [SerializeField] TextMeshProUGUI TimerText;
     [SerializeField] float money = 0f;
     bool mask = false;
-    bool worm = false;
+    bool worm = true;
     bool apple = false;
     bool water = false;
+    bool startTimer = false;
     float waterCount = 0;
+    float timer = 60;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Coin")
@@ -23,6 +28,20 @@ public class Money : MonoBehaviour
     void Update()
     {
         CashText.text = (":" + money);
+        if (worm)
+        {
+            canvas.gameObject.SetActive(true);
+        }
+        if (startTimer)
+        {
+            Debug.Log("timer start");
+        }
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+            TimerText.text = "" + timer;
+            SceneManager.LoadScene("Game");
+        }
     }
     public void BuyMask()
     {
@@ -56,5 +75,10 @@ public class Money : MonoBehaviour
             water = true;
             waterCount++;
         }
+    }
+    public void WormB()
+    {
+        Debug.Log("button press");
+        startTimer = true;
     }
 }
