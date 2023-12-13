@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - NPC
   - Shop
+  - Coin
+  - bob
   layers:
   - Default
   - TransparentFX
@@ -41,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Bg
+    uniqueID: 2494680705
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -52,6 +57,9 @@ TagManager:
     locked: 0
   - name: ground
     uniqueID: 2504830317
+    locked: 0
+  - name: Slopes
+    uniqueID: 3300865379
     locked: 0
   - name: UI
     uniqueID: 1559187431

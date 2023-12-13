@@ -16,7 +16,8 @@ public class Money : MonoBehaviour
     {
         if (collision.tag == "Coin")
         {
-            money++;
+            money += 1;
+            Destroy(collision.gameObject);
         }
     }
     void Update()

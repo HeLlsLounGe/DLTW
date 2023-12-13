@@ -24,7 +24,9 @@ public class Npc : MonoBehaviour
                 NoText();
             }else
             {
+                dialogueText.text = " ";
                 dialoguePanel.SetActive(true);
+                dialogueText.gameObject.SetActive(true);
                 StartCoroutine(Typing());
             }
         }
@@ -55,6 +57,7 @@ public class Npc : MonoBehaviour
         dialogueText.text = " ";
         index = 0;
         dialoguePanel.SetActive(false);
+        dialogueText.gameObject.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float PlayerSpeed = 5f;
+    [SerializeField] float playerSpeed = 5f;
+    [SerializeField] float deadAtXSeconds = 3f;
     float GravityAtStart;
     bool IsAlive = true;
+    float timerTillDeath = 0;
 
     Vector2 MoveInput;
 
@@ -29,7 +31,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!IsAlive)
         {
-            SceneManager.LoadScene("MainMenu");
+            timerTillDeath += Time.deltaTime;
+            if (timerTillDeath >= deadAtXSeconds)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
         }
         if (!IsAlive) { return; }
         Run();
@@ -45,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
-        Vector2 playerVelocity = new Vector2(MoveInput.x * PlayerSpeed, myRigidBody.velocity.y);
+        Vector2 playerVelocity = new Vector2(MoveInput.x * playerSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
 
         bool PlayerHZMoving = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
@@ -61,6 +67,13 @@ public class PlayerMovement : MonoBehaviour
         if (PlayerHZMoving)
         {
             transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "bob")
+        {
+            IsAlive = false;
         }
     }
 }
