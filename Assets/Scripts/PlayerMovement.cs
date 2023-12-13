@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
             timerTillDeath += Time.deltaTime;
             if (timerTillDeath >= deadAtXSeconds)
             {
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("End1");
             }
         }
         if (!IsAlive) { return; }

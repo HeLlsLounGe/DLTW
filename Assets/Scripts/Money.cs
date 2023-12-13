@@ -9,9 +9,10 @@ public class Money : MonoBehaviour
     [SerializeField] TextMeshProUGUI CashText;
     [SerializeField] Canvas canvas;
     [SerializeField] TextMeshProUGUI TimerText;
+    [SerializeField] GameObject prefab;
     [SerializeField] float money = 0f;
     bool mask = false;
-    bool worm = true;
+    bool worm = false;
     bool apple = false;
     bool water = false;
     bool startTimer = false;
@@ -34,13 +35,15 @@ public class Money : MonoBehaviour
         }
         if (startTimer)
         {
+            timer -= Time.deltaTime;
             Debug.Log("timer start");
         }
         if (timer > 0)
         {
-            timer -= Time.deltaTime;
             TimerText.text = "" + timer;
-            SceneManager.LoadScene("Game");
+        }else
+        {
+            SceneManager.LoadScene("End2");
         }
     }
     public void BuyMask()
@@ -78,6 +81,7 @@ public class Money : MonoBehaviour
     }
     public void WormB()
     {
+        Instantiate(prefab, new Vector3(-18.63f, 0.35f, 0), Quaternion.identity);
         Debug.Log("button press");
         startTimer = true;
     }
