@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     float GravityAtStart;
     bool IsAlive = true;
     float timerTillDeath = 0;
+    float hasMask = 0;
 
     Vector2 MoveInput;
 
@@ -34,12 +35,13 @@ public class PlayerMovement : MonoBehaviour
             timerTillDeath += Time.deltaTime;
             if (timerTillDeath >= deadAtXSeconds)
             {
-                SceneManager.LoadScene("End1");
+                SceneManager.LoadScene("MainMenu");
             }
         }
         if (!IsAlive) { return; }
         Run();
         FlipSprite();
+        hasMask = FindObjectOfType<Money>().mask;
     }
 
     void OnMove(InputValue value)
@@ -72,6 +74,10 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "bob")
+        {
+            IsAlive = false;
+        }
+        if (collision.tag == "gas" && hasMask < 1)
         {
             IsAlive = false;
         }

@@ -11,7 +11,7 @@ public class Money : MonoBehaviour
     [SerializeField] TextMeshProUGUI TimerText;
     [SerializeField] GameObject prefab;
     [SerializeField] float money = 0f;
-    bool mask = false;
+    public float mask = 0;
     bool worm = false;
     bool apple = false;
     bool water = false;
@@ -48,10 +48,10 @@ public class Money : MonoBehaviour
     }
     public void BuyMask()
     {
-        if (money >= 16 && mask == false)
+        if (money >= 16 && mask == 0)
         {
             money -= 16;
-            mask = true;
+            mask = 1;
         }
     }
     public void BuyWorm()

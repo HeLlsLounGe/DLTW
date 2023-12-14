@@ -7,6 +7,7 @@ using TMPro;
 
 public class Npc : MonoBehaviour
 {
+    [SerializeField] public GameObject EToTalk;
     [SerializeField] public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
@@ -17,9 +18,17 @@ public class Npc : MonoBehaviour
     public bool playerClose;
     bool keyPressed;
     float timer = 0f;
+    bool PressTalk = false;
 
     void Update()
     {
+        if (playerClose)
+        {
+            PressTalk = true;
+        }else
+        {
+            PressTalk = false;
+        }
         if (Input.GetKeyDown(KeyCode.E) && playerClose)
         {
             if (dialoguePanel.activeInHierarchy && timer <= timerDelay)
@@ -44,6 +53,13 @@ public class Npc : MonoBehaviour
             {
                 ContButton.SetActive(true);
             }
+        }
+        if (PressTalk)
+        {
+            EToTalk.SetActive(true);
+        }else
+        {
+            EToTalk.SetActive(false);
         }
     }
     public void NextLine()
