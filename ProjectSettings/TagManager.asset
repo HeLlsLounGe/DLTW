@@ -9,6 +9,9 @@ TagManager:
   - Shop
   - Coin
   - bob
+  - gas
+  - Escape1
+  - Escape2
   layers:
   - Default
   - TransparentFX

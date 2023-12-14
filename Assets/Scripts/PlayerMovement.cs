@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float deadAtXSeconds = 3f;
     float GravityAtStart;
     bool IsAlive = true;
+    bool poisoned = false;
     float timerTillDeath = 0;
     float hasMask = 0;
 
@@ -30,6 +31,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (hasMask == 1)
+        {
+            MyAnimator.SetTrigger("HasMask");
+        }
         if (!IsAlive)
         {
             timerTillDeath += Time.deltaTime;
@@ -37,16 +42,23 @@ public class PlayerMovement : MonoBehaviour
             {
                 SceneManager.LoadScene("MainMenu");
             }
+        } if (poisoned)
+        {
+            timerTillDeath += Time.deltaTime;
+            if (timerTillDeath>= deadAtXSeconds)
+            {
+                SceneManager.LoadScene("End3");
+            }
         }
         if (!IsAlive) { return; }
         Run();
         FlipSprite();
-        hasMask = FindObjectOfType<Money>().mask;
+        hasMask = GetComponent<Money>().mask;
     }
 
     void OnMove(InputValue value)
     {
-        if (!IsAlive) { return; }
+        if (!IsAlive || poisoned) { return; }
         MoveInput = value.Get<Vector2>();
         Debug.Log(MoveInput);
     }
@@ -79,7 +91,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.tag == "gas" && hasMask < 1)
         {
-            IsAlive = false;
+            poisoned = true;
+        }
+        if (collision.tag == "Escape1")
+        {
+            SceneManager.LoadScene("End4");
         }
     }
 }
