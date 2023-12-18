@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     bool poisoned = false;
     float timerTillDeath = 0;
     float hasMask = 0;
+    bool hasWorm = false;
 
     Vector2 MoveInput;
 
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
             timerTillDeath += Time.deltaTime;
             if (timerTillDeath >= deadAtXSeconds)
             {
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("End1");
             }
         } if (poisoned)
         {
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         Run();
         FlipSprite();
         hasMask = GetComponent<Money>().mask;
+        hasWorm = GetComponent<Money>().worm;
     }
 
     void OnMove(InputValue value)
@@ -96,6 +98,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "Escape1")
         {
             SceneManager.LoadScene("End4");
+        }
+        if (collision.tag == "Escape2" && hasWorm)
+        {
+            SceneManager.LoadScene("End2");
         }
     }
 }

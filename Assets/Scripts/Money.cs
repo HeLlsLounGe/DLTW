@@ -12,7 +12,7 @@ public class Money : MonoBehaviour
     [SerializeField] GameObject prefab;
     [SerializeField] float money = 0f;
     public float mask = 0;
-    bool worm = false;
+    public bool worm = false;
     bool apple = false;
     bool water = false;
     bool startTimer = false;
