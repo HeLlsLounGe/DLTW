@@ -83,8 +83,14 @@ public class Npc : MonoBehaviour
         ContButton.SetActive(false);
         foreach (char letter in dialogue[index].ToCharArray())
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(wordSpeed);
+            if (playerClose)
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(wordSpeed);
+            }else
+            {
+                NoText();
+            }
         }
         ContButton.SetActive(true);
     }
